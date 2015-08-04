@@ -1,0 +1,19 @@
+<h1>Posts</h1>
+
+<h2>Search with AJAX</h2>
+<form id="search_with_submit">
+  <input type="text" name="search" id="searchText">
+  <button>Search</button>
+</form>
+
+<h2>Search with AJAX in realtime</h2>
+<form id="search_on_keyup">
+  <input type="text" name="search" id="searchText">
+  <button>Search</button>
+</form>
+
+<ul id="postsList">
+<% @posts.each do |post| %>
+  <li><%= post.title %></li>
+<% end%>
+</ul>

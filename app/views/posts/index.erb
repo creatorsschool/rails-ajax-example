@@ -1,0 +1,12 @@
+<h1>Posts</h1>
+
+<form id="search_form">
+  <input type="text" name="search">
+  <button>Search</button>
+</form>
+
+<ul id="postsList">
+  <% @posts.each do |post| %>
+    <li><%= post.title %></li>
+  <% end%>
+</ul>
